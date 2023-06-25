@@ -11,10 +11,11 @@ public class AppOrderTest {
 
     @Test
     public void Test1() {
-        open("http://0.0.0.0:9999/");
+
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
-        form.$("input[name=name]").setValue("Иванов Иван");
+        form.$("input[name=name]").setValue("Иванов И");
         form.$("input[name=phone]").setValue("+12345678901");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
@@ -25,10 +26,10 @@ public class AppOrderTest {
 
     @Test
     public void Test2() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
-        form.$("input[name=name]").setValue("Иванов Иdfy");
+        form.$("input[name=name]").setValue("Иванов И");
         form.$("input[name=phone]").setValue("+12345678901");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
@@ -39,10 +40,10 @@ public class AppOrderTest {
 
     @Test
     public void Test3() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
-        form.$("input[name=name]").setValue("Иванов иван");
+        form.$("input[name=name]").setValue("Иванов и");
         form.$("input[name=phone]").setValue("+1234567890");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
@@ -53,10 +54,10 @@ public class AppOrderTest {
 
     @Test
     public void Test4() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
-        form.$("input[name=name]").setValue("Иванов иван");
+        form.$("input[name=name]").setValue("Иванов и");
         form.$("input[name=phone]").setValue("+12345678900");
         form.$("button").click();
         form.$("[data-test-id=agreement]").shouldHave(Condition.cssClass("input_invalid"));
