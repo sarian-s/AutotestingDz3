@@ -11,7 +11,7 @@ public class AppOrderTest {
 
     @Test
     public void Test1() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
         form.$("input[name=name]").setValue("Иванов Иван");
@@ -25,7 +25,7 @@ public class AppOrderTest {
 
     @Test
     public void Test2() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
         form.$("input[name=name]").setValue("Иванов Иdfy");
@@ -39,7 +39,7 @@ public class AppOrderTest {
 
     @Test
     public void Test3() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
         form.$("input[name=name]").setValue("Иванов иван");
@@ -53,7 +53,7 @@ public class AppOrderTest {
 
     @Test
     public void Test4() {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
 
         SelenideElement form = $("form");
         form.$("input[name=name]").setValue("Иванов иван");
