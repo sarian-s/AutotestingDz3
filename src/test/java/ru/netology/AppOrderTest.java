@@ -3,6 +3,8 @@ package ru.netology;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
@@ -10,6 +12,11 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class AppOrderTest {
     WebDriver driver;
+    @BeforeEach
+    void setup() {
+        driver = WebDriverManager.chromedriver().create();
+    }
+
 
     @Test
     public void Test1() {
