@@ -4,10 +4,12 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class AppOrderTest {
+    WebDriver driver;
 
     @Test
     public void Test1() {
