@@ -38,7 +38,7 @@ public class AppOrderTest {
         open("http://localhost:9999");
 
         SelenideElement form = $("form");
-        form.$("input[name=name]").setValue("Иванов И");
+        form.$("input[name=name]").setValue("Иванов gsd");
         form.$("input[name=phone]").setValue("+12345678901");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
