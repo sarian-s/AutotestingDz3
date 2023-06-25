@@ -11,7 +11,7 @@ public class AppOrderTest {
 
     @Test
     public void Test1() {
-        open("http://0.0.0.0:9999");
+        open("http://0.0.0.0:9999/");
 
         SelenideElement form = $("form");
         form.$("input[name=name]").setValue("Иванов Иван");
